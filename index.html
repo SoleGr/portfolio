@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soledad Grilletta</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script defer type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://www.linkedin.com/in/soledad-grilletta/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/SoleGr"><i class="fa-brands fa-github"></i></a>
+            <button id="modeButton" onclick="darkMode()"><svg xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 406 511.4">
+                    <path
+                        d="M208.14 262.32 406 64.46c-1.16-8.19-6.5-12.46-14.35-14.35L215.46 15.38l-54.03 54.04 2.13 11.79L51.67 195.32c-14.17.22-26.98 6.05-36.3 15.36C5.88 220.18 0 233.31 0 247.8c0 14.49 5.88 27.61 15.37 37.11a52.397 52.397 0 0 0 22.94 13.43l94.52 149.54H93.88c-24.09 0-43.83 19.74-43.83 43.84v19.68h249.64v-19.68c0-24.06-19.74-43.84-43.84-43.84h-62.63L89.97 284.53c9.27-9.47 14.99-22.44 14.99-36.73 0-9.69-2.63-18.77-7.21-26.57l76.97-78.48 19.07 105.22c2.47 7.31 6.34 13.09 14.35 14.35zm143.97-51.8c18.26-18.27 18.26-48.15 0-66.41l-2.14-2.14-66.41 66.41 2.14 2.14c18.27 18.26 48.15 18.26 66.41 0zM153.7 10.94c14.59-14.59 38.46-14.59 53.05 0l1.71 1.71-53.05 53.05-1.71-1.71c-14.59-14.59-14.59-38.46 0-53.05z" />
+                </svg></button>
+        </nav>
+    </header>
+    <main>
+        <div class="hero container">
+            <h1 id="title">Hello! I'm Soledad Grilletta</h1>
+            <h4 id="subtitle">Full Stack dev from Buenos Aires :)</h4>
+            <svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+        </div>
+        <div></div>
+
+        <h2>Projects</h2>
+        <hr>
+        <div id="projects">
+            <div class="project">
+                <h3>Rescate de patitas</h3>
+                <a href=""><img src="img/project1_desktop.png" alt="" class="hover-shadow cursor"></a>
+                <p>A Web App for lost & found pets. <br> (It might take a while to load)</p>
+                <p>Technologies used: Java (MVC) + MySQL (Hibernate ORM) + Handlebars + HTML + CSS</p>
+                <div class="footer-buttons">
+                    <a href="https://patitasalrescate04.herokuapp.com/"><i class="fa-solid fa-eye"></i></a>
+                    <a href="https://github.com/SoleGr/rescatedepatitas"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Turismo en la Tierra Media</h3>
+                <img src="img/project2.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                <p>A Web App for a Lord of the Rings theme park.</p>
+                <p>Technologies used: Java (MVC + S) + SQLite + HTML + CSS</p>
+                <div class="footer-buttons">
+                    <a onclick="openModal();currentSlide(1)" class="hover-shadow cursor"><i class="fa-solid fa-eye"></i></a>
+                    <a href="https://github.com/SoleGr/TierraMediaTurismo"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Juego libre</h3>
+                <a href="https://juegolibre.github.io/home/index.html"><img src="img/project3.png" alt="" class="hover-shadow cursor"></a>
+                <p>A Website for a manufacturer of wooden toys and furniture for kids.</p>
+                <p>Technologies used: HTML + CSS + Bootstrap</p>
+                <div class="footer-buttons">
+                    <a href="https://juegolibre.github.io/home/index.html"><i class="fa-solid fa-eye"></i></a>
+                    <a href="https://github.com/JuegoLibre/home"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Carpintería</h3>
+                <a href="http://grilletta.ar"><img src="img/project4.png" alt="" class="hover-shadow cursor"></a>
+                <p>A Website for a carpentry showing its works.</p>
+                <p>Technologies used: HTML + CSS + Bootstrap</p>
+                <div class="footer-buttons">
+                    <a href="http://grilletta.ar"><i class="fa-solid fa-eye"></i></a>
+                    <a href="https://github.com/grilletta/grilletta.github.io"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="img/project2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="img/2atracciones.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 10</div>
+                    <img src="img/3login.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 10</div>
+                    <img src="img/4miperfil.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="img/5miperfil_compras.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="img/6dashboard.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="img/7usuarios.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="img/8nuevo_usuario.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="img/9modificar_usuario.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="img/10promociones.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
