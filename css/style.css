@@ -24,6 +24,8 @@ h3 {
   font-family: 'Ubuntu';
   font-size: 20px;
   font-weight: 300;
+  text-align: center;
+  margin-top: 0;
 }
 
 p {
@@ -39,13 +41,13 @@ a {
 
 #title {
   position: relative;
-  top: 20%;
+  top: 25%;
 }
 
 #subtitle {
   text-align: center;
   position: relative;
-  top: 20%;
+  top: 25%;
 }
 
 .dark-mode {
@@ -75,7 +77,18 @@ a {
 
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+#contact {
+  margin-top: 100px;
+}
+
+#contact-links {
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  
 }
 
 .project {
