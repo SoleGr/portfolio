@@ -12,7 +12,9 @@ function darkMode() {
   }
   
   var slideIndex = 1;
-  showSlides(slideIndex);
+  if (document.getElementsByClassName('mySlides').length) {
+    showSlides(slideIndex);
+  }
   
   function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -25,6 +27,7 @@ function darkMode() {
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
+    if (!slides.length) return;
     var dots = document.getElementsByClassName("demo");
     var captionText = document.getElementById("caption");
     if (n > slides.length) {slideIndex = 1}
@@ -32,10 +35,37 @@ function darkMode() {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
+    if (dots.length) {
+      for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      if (captionText) captionText.innerHTML = dots[slideIndex-1].alt;
+    } else {
+      slides[slideIndex-1].style.display = "block";
+      if (captionText) captionText.innerHTML = "";
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+(function(){
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('return-to-top');
+    if (!btn) return;
+    const THRESHOLD = 200;
+
+    btn.style.display = 'none';
+
+    const onScroll = () => {
+      btn.style.display = (window.scrollY > THRESHOLD) ? 'block' : 'none';
+    };
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+})();

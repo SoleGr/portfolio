@@ -18,13 +18,12 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <nav>
-            <a href="#projects"><i class="fa-solid fa-briefcase"></i></a>
-            <a href="https://www.linkedin.com/in/soledad-grilletta/" target="_blank"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/SoleGr" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="#contact"><i class="fa-solid fa-paper-plane"></i></a>
+            <a title="projects" href="#projects"><i class="fa-solid fa-briefcase"></i></a>
+            <a title="skills" href="#skills"><i class="fa-solid fa-gear"></i></a>
+            <a title="resume" href="files/CV-Soledad-Grilletta.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i></a>
+            <a title="contact" href="#contact"><i class="fa-solid fa-paper-plane"></i></a>
             <button id="modeButton" onclick="darkMode()"><svg xmlns="http://www.w3.org/2000/svg"
                     shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                     image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 406 511.4">
@@ -44,6 +43,28 @@
             </svg>
         </div>
 
+        <section id="skills">
+            <h2>My skills</h2>
+            <hr>
+            <div id="logos">
+                <div class="row justify-content-center mb-3">
+                    <img src="img/html.svg" alt="html"/>
+                    <img src="img/js.svg" alt="javascript"/>
+                    <img src="img/css.svg" alt="css"/>
+                </div>
+                <div class="row justify-content-center mb-3">
+                    <img src="img/java.svg" alt="java"/>
+                    <img src="img/spring.svg" alt="spring"/>
+                    <img src="img/react.svg" alt="react"/>
+                </div>
+                <div class="row justify-content-center mb-3">
+                    <img src="img/jquery.svg" alt="jquery"/>
+                    <img src="img/jira.svg" alt="jira"/>                   
+                    <img src="img/scrum.png" alt="scrum"/>
+                </div>
+            </div>
+        </section>
+
         <section>
             <h2>Projects</h2>
             <hr>
@@ -51,7 +72,7 @@
                 <div class="project">
                     <h3>Rescate de patitas</h3>
                     <a href="https://patitasalrescate04.herokuapp.com/"><img src="img/project1_desktop.png" alt="" class="hover-shadow cursor"></a>
-                    <p>A Web App for lost & found pets. <br> (It might take a while to load)</p>
+                    <p>A Web App for lost & found pets.</p>
                     <p>Technologies used: Java (MVC) + MySQL (Hibernate ORM) + Handlebars + HTML + CSS</p>
                     <div class="footer-buttons">
                         <a href="https://patitasalrescate04.herokuapp.com/" target="_blank"><i class="fa-solid fa-eye"></i></a>
@@ -169,9 +190,12 @@
                     <p id="caption"></p>
                 </div>
             </div>
-
+        </div>
+        <!-- Return to Top -->
+        <a href="#top" id="return-to-top">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
     </main>
-
 
 </body>
 
